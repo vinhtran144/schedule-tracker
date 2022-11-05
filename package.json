@@ -1,5 +1,14 @@
 {
-  "dependencies": {
-    "jest": "^29.2.2"
+  "name": "schedule-tracker",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "test": "jest"
+  },
+  "author": "Vinh Tran",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^7.5.0"
   }
 }
