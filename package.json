@@ -10,5 +10,14 @@
   "license": "MIT",
   "devDependencies": {
     "concurrently": "^7.5.0"
-  }
+  },
+  "description": "Keep track of how a user stick to their schedule",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinhtran144/schedule-tracker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vinhtran144/schedule-tracker/issues"
+  },
+  "homepage": "https://github.com/vinhtran144/schedule-tracker#readme"
 }
