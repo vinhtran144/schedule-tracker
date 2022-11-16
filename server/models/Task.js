@@ -37,18 +37,21 @@ const TaskSchema = new Schema ({
         // designed for an 'N/A' task to contribute to a goal with
         // 'green', 'yellow', or 'red' urgency
     
-    toDo: [{
+    toDo: [
+        {
         // even smaller steps for a task, a list of To-do
         type: Schema.Types.ObjectId,
         ref: 'ToDo'
-    }],
-    owner: [{
-        // list of owners of task. this can help expand to group task management
-        // perhaps future versions, not this one
+        }
+    ],
+    ownerID: [
+        {
+        // Can be use to query templates belong to a certain user
         type: Schema.Types.ObjectId,
         ref: 'User'
-    }]
-})
+        }
+    ]   
+});
 
 const Task = mongoose.model('Task',TaskSchema);
 module.exports = Task;
